@@ -88,6 +88,7 @@ import {
 import Swiper from "react-native-swiper";
 import { NoBgButtons } from "../../components/Buttons";
 import Card from "../../components/Card";
+import SwiperComponent from "../../components/SwiperComponent";
 
 const HomeFirstTab = () => {
   const slideText = [
@@ -98,7 +99,7 @@ const HomeFirstTab = () => {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: "white" }}>
       <View style={{ height: 240 }}>
-        <Swiper
+        {/* <Swiper
           style={{
             // backgroundColor: "rgba(0,0,0,0.1)",
             justifyContent: "center",
@@ -152,7 +153,8 @@ const HomeFirstTab = () => {
               </View>
             );
           })}
-        </Swiper>
+        </Swiper> */}
+        <SwiperComponent data={slideText}/>
       </View>
 
       <View style={{ paddingHorizontal: 20 }}>
